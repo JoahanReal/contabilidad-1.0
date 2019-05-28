@@ -1,0 +1,260 @@
+     <!DOCTYPE html>
+<body style="background-color:rgb(160, 221, 239);">
+</body>
+<html>
+<head>
+    <head>
+  <style>
+    div {
+      padding: 16px;    
+      background-color: #49ff65;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <FONT FACE="courier new"><h1>Cost-In-Coming</h1></FONT> 
+  </div>
+</body>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, ninimum-scale=1.0">
+    <meta charset="8369bf">
+    <style>
+        section {clear:both}
+        #menu, #menu ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        /* hace referencia a los primeros enlaces */
+        #menu li {
+            float:left;
+            position:static;
+            width: 15.3em;
+        }
+        /* hace referencia a los segundos submenus */
+        #menu li ul {
+            position:static;
+            display:none;
+        }
+        /* hace referencia a los terceros submenus */
+        #menu li ul li ul {
+            margin-top:-2.2em;
+            margin-left:10em;
+        }
+        /* hace referencia a los cuartos submenus */
+        #menu li ul li ul li ul {
+            margin-top:-2.2em;
+            margin-left:10em;
+        }
+ 
+        /* hace referencia al formato de los enlaces */
+        #menu a {
+            display:block;
+            border-right:1px solid #fff;
+            background:#f782e9;
+            color:#3B3B3B;
+            text-decoration:none;
+            padding:10px;
+            position: relative;
+        }
+        /* hace referencia al formato 
+           cuando se pasa el raton por encima del enlace */
+        #menu a:hover {
+            background-color:#c66fed;
+            color:#fff;
+        }
+        /* hace referencia a los bloques de los segundos menus en adelante */
+        #menu ul {
+            border-top:1px solid #fff;
+        }
+        /* hace referencia al formato
+           del enlaces de los segundos menus en adelante */
+        #menu ul a {
+            border-right:none;
+            border-right:1px solid #fff;
+            border-bottom:1px solid #fff;
+            border-left:1px solid #fff;
+            background:#f782e9;
+            position: relative;
+        }
+ 
+        /* esconde los menus de tercer nivel cuando estamos en el primer nivel */
+        #menu li:hover ul ul {
+            display:none;
+        }
+        /* esconde los menus de cuarto nivel cuando estamos en el primer nivel */
+        #menu li:hover ul ul ul {
+            display:none;
+        }
+        /* esconde los menus de cuarto nivel cuando estamos en el segundo nivel */
+        #menu li ul li:hover ul ul {
+            display:none;
+        }
+        /* muestra los menus de segundo nivel */
+        #menu li:hover ul {
+            display:block;
+        }
+        /* muestra los menus de tercer nivel */
+        #menu li ul li:hover ul{
+            display:block;
+        }
+        /* muestra los menus de cuarto nivel */
+        #menu li ul li ul li:hover ul{
+            display:block;
+        }
+        
+    </style>
+    
+</head>
+ 
+<body>
+ 
+    <header>
+    
+ 
+        <nav id="menu">
+            <li><a href="#" title="Homepage" class="selected">Inicio</a>
+                <ul>
+                    <li><a href="calculo.html" title="calculo de costo">informacion</a></li>
+                    <li><a href="#" title="calculo de costo">tutoriales</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Projects">Cost-In-Coming Pro</a>
+                <ul>
+                    <li><a href="#" title="Older projects">Cost-In-Cong Pro</a>
+                        
+                    </li>
+                    <li><a href="#" title="Proyectos Actuales">Cost-In-Coming Pro</a>
+                       
+                    </li>
+                </ul>
+            </li>
+            <li><a href="names.html" title="Contacto">Contacto</a></li>
+            <li><a href="#" title="Dios te ama">Cbtis19 Programacion</a></li>
+            
+            <li><a href="#" title="Homepage" class="selected">Traducciones</a>
+                <ul>
+                    <li><a href="ingles.html" title="Ingles">Ingles</a></li>
+                    <li><a href="portugues.html" title="Portugues">Portugues</a></li>
+                     
+                </ul>
+            </li>
+        </nav>
+    </header>
+ 
+    <section>
+        <article>
+            <center><FONT FACE="courier new"><h1>Costo Primo</h1></FONT></center>
+        </article>
+    </section>
+ 
+</body>
+</html>
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+ Costo Primo Directa:<input type="number" id="valor1" value="0"> 
+    +
+ Materia Prima Directa:  <input type="number" id="valor2" value="0"> 
+    =
+    
+    <output name="resultado" for="valor1 valor2"></output>
+</form></center>
+
+ <section>
+        <article>
+            <center><FONT FACE="courier new"><h1>Costo de Produccion</h1></FONT></center>
+        </article>
+    </section>
+ 
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
+ Costo Primo:<input type="number" id="valor1" value="0"> 
+    +
+ Gastos Generales de Fabrica Directos :  <input type="number" id="valor2" value="0"> 
+    +
+    Costos Indirectos:  <input type="number" id="valor3" value="0"> 
+    =
+    <output name="resultado" for="valor1 valor2 valor3 "></output>
+</form></center>
+
+
+ <section>
+        <article>
+            <center><FONT FACE="courier new"><h1>Costos Indirectos</h1></FONT></center>
+        </article>
+    </section>
+ 
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
+ Materia Prima Indirecta:<input type="number" id="valor1" value="0"> 
+    +
+ Mano de Obra Indirecta:  <input type="number" id="valor2" value="0"> 
+    +
+Gastos Generales de Frabicacion Indiecta :  <input type="number" id="valor3" value="0"> 
+    =
+    <output name="resultado" for="valor1 valor2 valor3 "></output>
+</form></center>
+
+
+
+ <section>
+        <article>
+           <center><FONT FACE="courier new"><h1>Costo de Distribucion</h1></FONT></center>
+        </article>
+    </section>
+ 
+
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+ Gastos de Ventas:<input type="number" id="valor1" value="0"> 
+    +
+ Gastos de Administracion:  <input type="number" id="valor2" value="0"> 
+    =  
+    <output name="resultado" for="valor1 valor2"></output>
+</form></center>
+
+
+
+
+<section>
+        <article>
+            <center><FONT FACE="courier new"><h1>Costo de Operacion</h1></FONT></center>
+        </article>
+    </section>
+ 
+
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+ Costo de Produccion:<input type="number" id="valor1" value="0"> 
+    +
+ Costo de Distribucion:  <input type="number" id="valor2" value="0"> 
+    =  
+    <output name="resultado" for="valor1 valor2"></output>
+</form></center>
+
+
+
+
+
+
+<section>
+        <article>
+            <center><FONT FACE="courier new"><h1>Costo Unitario de Produccion</h1></FONT></center>
+        </article>
+    </section>
+ 
+
+<p></p>
+<p></p>
+<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)/parseInt(valor2.value)">
+ Costo de Produccion:<input type="number" id="valor1" value="0"> 
+    /
+ Unidad de Produccion:  <input type="number" id="valor2" value="0"> 
+    =  
+    <output name="resultado" for="valor1 valor2"></output>
+</form></center>
