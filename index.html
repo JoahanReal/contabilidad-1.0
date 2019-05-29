@@ -5,14 +5,14 @@
 <head>
     <head>
   <style>
-    div {
+    .titulo {
       padding: 16px;    
       background-color: #49ff65;
     }
   </style>
 </head>
 <body>
-  <div>
+  <div class="titulo">
     <FONT FACE="courier new"><h1>Cost-In-Coming</h1></FONT> 
   </div>
 </body>
@@ -141,7 +141,8 @@
             </li>
         </nav>
     </header>
- 
+   
+
     <section>
         <article>
             <center><FONT FACE="courier new"><h1>Costo Primo</h1></FONT></center>
@@ -152,15 +153,15 @@
 </html>
 <p></p>
 <p></p>
-<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+<div class= "contenedor"> <center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
  Costo Primo Directa:<input type="number" id="valor1" value="0"> 
     +
  Materia Prima Directa:  <input type="number" id="valor2" value="0"> 
     =
     
     <output name="resultado" for="valor1 valor2"></output>
-</form></center>
-
+</form></center> 
+   </div>
  <section>
         <article>
             <center><FONT FACE="courier new"><h1>Costo de Produccion</h1></FONT></center>
@@ -169,6 +170,8 @@
  
 <p></p>
 <p></p>
+<div class="contenedor">
+
 <center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
  Costo Primo:<input type="number" id="valor1" value="0"> 
     +
@@ -177,18 +180,17 @@
     Costos Indirectos:  <input type="number" id="valor3" value="0"> 
     =
     <output name="resultado" for="valor1 valor2 valor3 "></output>
-</form></center>
-
-
- <section>
+    </form></center>
+    </div>
+<section>
         <article>
             <center><FONT FACE="courier new"><h1>Costos Indirectos</h1></FONT></center>
         </article>
-    </section>
+</section>
  
 <p></p>
 <p></p>
-<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
+<div class="contenedor"><center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
  Materia Prima Indirecta:<input type="number" id="valor1" value="0"> 
     +
  Mano de Obra Indirecta:  <input type="number" id="valor2" value="0"> 
@@ -197,7 +199,7 @@ Gastos Generales de Frabicacion Indiecta :  <input type="number" id="valor3" val
     =
     <output name="resultado" for="valor1 valor2 valor3 "></output>
 </form></center>
-
+</div>
 
 
  <section>
@@ -209,14 +211,14 @@ Gastos Generales de Frabicacion Indiecta :  <input type="number" id="valor3" val
 
 <p></p>
 <p></p>
-<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+<div classs="contenedor"><center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
  Gastos de Ventas:<input type="number" id="valor1" value="0"> 
     +
  Gastos de Administracion:  <input type="number" id="valor2" value="0"> 
     =  
     <output name="resultado" for="valor1 valor2"></output>
 </form></center>
-
+</div>
 
 
 
@@ -229,20 +231,20 @@ Gastos Generales de Frabicacion Indiecta :  <input type="number" id="valor3" val
 
 <p></p>
 <p></p>
-<center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+<div class="contenedor"><center><form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
  Costo de Produccion:<input type="number" id="valor1" value="0"> 
     +
  Costo de Distribucion:  <input type="number" id="valor2" value="0"> 
     =  
     <output name="resultado" for="valor1 valor2"></output>
 </form></center>
+</div>
 
 
 
 
 
-
-<section>
+<div class="contenedor"><section>
         <article>
             <center><FONT FACE="courier new"><h1>Costo Unitario de Produccion</h1></FONT></center>
         </article>
@@ -258,3 +260,4 @@ Gastos Generales de Frabicacion Indiecta :  <input type="number" id="valor3" val
     =  
     <output name="resultado" for="valor1 valor2"></output>
 </form></center>
+</div>

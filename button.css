@@ -25,4 +25,13 @@ div#buttonlia {
  background-color: #32a0d9;
  margin-top: -2px;
     padding-bottom: 12px;}
+
+content: 'contenedor';
+    
     }
+.contenedor{
+    width:500px;
+    height:auto;
+    background:#32a0d9;
+    text-align: center;
+}
