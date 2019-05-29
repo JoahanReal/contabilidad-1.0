@@ -31,7 +31,8 @@ content: 'contenedor';
     }
 .contenedor{
     width:500px;
-    height:auto;
+    height:500px;
     background:#32a0d9;
     text-align: center;
+    
 }
